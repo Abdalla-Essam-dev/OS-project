@@ -10,7 +10,7 @@ import ExecutionLog from './components/ExecutionLog';
 import PlaybackControls from './components/PlaybackControls';
 import ProcessTooltip from './components/ProcessTooltip';
 
-const API_BASE = '/api';
+const API_BASE = import.meta.env.VITE_API_URL || '/api';
 
 export default function App() {
   const [problem, setProblem] = useState(null);
